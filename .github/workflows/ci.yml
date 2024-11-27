@@ -31,14 +31,12 @@ jobs:
     permissions:
       security-events: write
       actions: read
+      contents: read
 
     strategy:
       fail-fast: false
       matrix:
         language: [javascript]
-
-    container:
-      image: codeql-container:f0f91db
 
     steps:
       - name: Checkout
