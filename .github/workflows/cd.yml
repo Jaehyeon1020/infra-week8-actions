@@ -1,9 +1,8 @@
-name: Deploy to cloudtype
+name: CD
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   deploy:
